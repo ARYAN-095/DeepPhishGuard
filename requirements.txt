@@ -30,5 +30,11 @@ python-dotenv
 
 
 
+# api
+fastapi
+uvicorn
+pydantic
+
+
 
 

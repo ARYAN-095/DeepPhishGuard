@@ -1,0 +1,58 @@
+helperdata.txt
+.env
+
+# 💻 Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# 📦 Virtual environment
+env/
+venv/
+phishing-detector-env/
+deepphishguard/
+
+# 📚 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 📦 Packaging
+*.egg-info/
+dist/
+build/
+
+# 📄 Environment variables
+.env
+
+# 🧪 Test output
+htmlcov/
+coverage.xml
+*.cover
+.cache/
+.tox/
+.nox/
+
+# 📊 Data folders
+data/raw/
+data/external/
+data/processed/*.csv
+data/processed/*.parquet
+*.db
+
+# 📦 Models & outputs
+models/
+outputs/
+*.pkl
+*.h5
+*.joblib
+
+# 🗃 Logs
+*.log
+logs/
+
+# 📸 Screenshots or scraped screenshots
+screenshots/
+
+# 🚀 VSCode settings (optional)
+.vscode/

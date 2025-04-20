@@ -1,0 +1,29 @@
+# Core
+beautifulsoup4
+requests
+pandas
+numpy
+tensorflow>=2.11,<2.16
+xgboost>=1.7,<2.0
+
+# Deep learning
+tensorflow>=2.11,<2.16
+keras>=2.11,<2.16
+
+# NLP & text processing
+nltk
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# API
+fastapi
+uvicorn
+
+# Model persistence
+joblib
+
+# Environment
+python-dotenv
+

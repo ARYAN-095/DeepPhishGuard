@@ -5,6 +5,7 @@ pandas
 numpy
 tensorflow>=2.11,<2.16
 xgboost>=1.7,<2.0
+scikit-learn
 
 # Deep learning
 tensorflow>=2.11,<2.16
@@ -26,4 +27,8 @@ joblib
 
 # Environment
 python-dotenv
+
+
+
+
 

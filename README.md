@@ -23,7 +23,7 @@ DeepPhishGuard is a Python‑based system to automatically detect phishing websi
 ---
 
 ## 📦 Folder Structure
-
+```
 phishing-detector/
 ├── data/                    # Raw and processed datasets
 │   ├── raw/                 # untouched HTML/CSV/JSON dumps
@@ -54,7 +54,7 @@ phishing-detector/
 ├── requirements.txt         # production dependencies
 ├── dev-requirements.txt     # linting, formatting, testing tools
 └── README.md                # project overview & instructions
-
+```
 
 
 

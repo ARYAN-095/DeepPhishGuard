@@ -103,47 +103,54 @@ Create a PostgreSQL DB and update DATABASE_URL in .env:
 DATABASE_URL=postgresql://user:pass@localhost:5432/phishingdb
 
 
-🛠️ Feature Extraction & Training
+# 🛠️ Feature Extraction & Training
 
 Assemble features
- 
+ ```
 python -c "from src.feature_extractor import build_dataset; build_dataset()"
 outputs data/processed/features.parquet and labels.
+```
 
-Train XGBoost
+# Train XGBoost
 
- 
+ ```
 python -c "from src.model.trainer import Trainer; Trainer.train('data/processed/features.parquet')"
 saves model to models/xgboost.pkl.
+```
 
-Evaluate
- 
+# Evaluate
+``` 
 python -c "from src.model.evaluator import Evaluator; Evaluator.evaluate('models/xgboost.pkl', 'data
+```
 
 
-
-🌐 API Usage
+# 🌐 API Usage
 
    Run the FastAPI service:
- 
+
+ ```
 uvicorn app.main:app --reload
 Then visit http://127.0.0.1:8000/docs for interactive docs.
+```
 
 Example request:
- 
+
+ ```
 curl -X POST "http://127.0.0.1:8000/predict" \
   -H "Content-Type: application/json" \
   -d '{"url":"http://example.com"}'
+```
 
 
-✅ Testing
- 
+# ✅ Testing
+
+ ```
 pip install -r dev-requirements.txt
 pytest --cov=src
+```
 
 
-
-🤝 Contributing
+# 🤝 Contributing
 
 Fork the repo
 
@@ -158,7 +165,7 @@ Open a PR
 
 
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
 
 
